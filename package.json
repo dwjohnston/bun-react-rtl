@@ -1,0 +1,19 @@
+{
+  "name": "bun-react",
+  "module": "index.ts",
+  "type": "module",
+  "devDependencies": {
+    "@happy-dom/global-registrator": "^16.7.3",
+    "@testing-library/dom": "^10.4.0",
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.2.0",
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@types/react": "^19.0.8",
+    "react": "^19.0.0"
+  }
+}
