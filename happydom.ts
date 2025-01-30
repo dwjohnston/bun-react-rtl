@@ -1,11 +1,14 @@
 import { GlobalRegistrator } from '@happy-dom/global-registrator';
-
-const oldConsole = console;
-GlobalRegistrator.register();
-window.console = oldConsole;
-
+import {cleanup} from '@testing-library/react'
 import * as matchers from "@testing-library/jest-dom/matchers";
-import { expect } from "bun:test";
+import { expect,afterEach } from "bun:test";
+
+GlobalRegistrator.register();
+
 
 // Extend the expect object with custom matchers
-expect.extend(matchers);
+expect.extend({...matchers});
+
+afterEach(() => {
+  cleanup()
+})

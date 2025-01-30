@@ -6,4 +6,5 @@ test('Can use Testing Library', () => {
   render(<MyComponent/>);
   const myComponent = screen.getByTestId('my-component');
   expect(myComponent).toBeInTheDocument();
+  expect(myComponent).toHaveStyle('color: red')
 })
