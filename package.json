@@ -2,6 +2,9 @@
   "name": "bun-react",
   "module": "index.ts",
   "type": "module",
+  "scripts": {
+    "vitest": "vitest"
+  },
   "devDependencies": {
     "@happy-dom/global-registrator": "^16.7.3",
     "@testing-library/dom": "^10.4.0",
@@ -14,6 +17,7 @@
   },
   "dependencies": {
     "@types/react": "^19.0.8",
-    "react": "^19.0.0"
+    "react": "^19.0.0",
+    "vitest": "^3.0.4"
   }
 }
